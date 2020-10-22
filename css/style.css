@@ -80,16 +80,7 @@ a {
   font-weight: bold;
   padding-bottom: 8px;
   margin-bottom: 16px;
-}
-
-.list__title:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #000;
+  border-bottom: 1px solid #000;
 }
 
 .list__title span {
@@ -120,16 +111,7 @@ a {
   font-size: 80px;
   line-height: 94px;
   font-weight: bold;
-}
-
-.header__title:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #000;
+  border-bottom: 2px solid #000;
 }
 
 .header img {
@@ -144,6 +126,7 @@ a {
 .p-skills .list {
   max-width: 996px;
   margin: auto;
+  text-align: center;
 }
 
 .p-skills .list .list__title {
@@ -151,10 +134,7 @@ a {
   line-height: 45px;
   margin-bottom: 40px;
   color: #fff;
-}
-
-.p-skills .list .list__title:after {
-  background: #fff;
+  border-color: #fff;
 }
 
 .p-skills .list .list__title span {
@@ -164,7 +144,7 @@ a {
 .p-skills .list ul {
   padding-left: 24px;
   border-left: 1px solid #96A9C4;
-  left: 390px;
+  display: inline-block;
 }
 
 .p-skills .list ul li.list__item {
@@ -203,20 +183,12 @@ a {
   padding-bottom: 20px;
 }
 
-.footer .footer__inner {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .footer .list .list__title {
   text-align: center;
   color: #fff;
   line-height: 43px;
   margin-bottom: 32px;
-}
-
-.footer .list .list__title:after {
-  background: #fff;
+  border-color: #fff;
 }
 
 .footer .list .list__title span {
@@ -236,5 +208,12 @@ a {
 .footer .list ul li.list__item a {
   color: #fff;
   margin-right: 24px;
+  border-bottom: 2px solid transparent;
+}
+
+.footer .list ul li.list__item a:hover {
+  border-bottom: 2px solid #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */
